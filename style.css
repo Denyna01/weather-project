@@ -24,8 +24,7 @@
 }
 
 .search {
-  float: left;
-  display: block;
+  display: inline-block;
   color: blue;
   text-align: center;
   padding: 10px 12px;
@@ -34,9 +33,9 @@
 }
 
 .button {
-  position: absolute;
-  left: 30%;
-  top: 27%;
+  position: relative;
+  left: 0em;
+  height: 47px;
 }
 
 .temperature {
