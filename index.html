@@ -10,6 +10,7 @@
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
+      
     />
     <script
       src="https://kit.fontawesome.com/598d98e824.js"
@@ -25,12 +26,19 @@
     <title>Wireframe to HTML/CSS</title>
   </head>
   <body>
+     </div class= "weather-app">
     <div class="card">
       <br />
       <div>
         <div class="search">
           <br />
-          <input type="text" placeholder="Enter any city" class="search bar" />
+          <input
+            type="text"
+            placeholder="Enter any city"
+            class="search bar"
+            autocomplete="off"
+            autofocus="on"
+          />
         </div>
         <button type="button" class="button">Search</button>
       </div>
@@ -38,7 +46,15 @@
 
       <div class="weather">
         <h2 class="city">Prague</h2>
-        <div class="temperature">13°C</div>
+        <div class="temperature">13</div>
+    <div class="tw-qi__temperature-unit-selector">
+                    <span class="tw-qi__fahrenheit-selector">
+                        °F
+                    </span>
+                    <span class="tw-qi__celsius-selector selected">
+                        °C
+                    </span>
+                </div>
         <p><i class="fa-regular fa-sun"></i></p>
         <div class="description">Cloudy</div>
         <div class="humidity">30%</div>

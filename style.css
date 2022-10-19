@@ -5,6 +5,11 @@
   height: 300vh;
   width: auto;
 }
+
+
+
+
+
 .h1 {
   border: none;
   padding: 5px 2px;
@@ -134,3 +139,12 @@
   height: auto;
   max-width: 10rem;
 }
+.weather-app{
+
+max-width: 600px;
+margin: 30px auto;
+padding: 20;
+border: 1px solid #8dd314;
+border-radius: 5px;
+}
+
