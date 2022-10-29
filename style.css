@@ -38,22 +38,18 @@
   font-size: 15px;
 }
 
-.button {
-  position: relative;
-  left: 0em;
-  height: 47px;
+div.actual {
+  display: flex;
 }
 
-.temperature {
-  margin: auto;
+ul.actual {
+  width: 50%;
+/*  background-color:tomato;*/
 }
-.fa-regular fa-sun {
-  color: yellow;
-  background-size: 200px;
-  padding: 10px;
-  border: 3rem;
-  margin: 3rem;
-  font-size: 24px;
+
+.actual img {
+  max-height: 2rem;
+  vertical-align: middle;
 }
 
 .Mon {
