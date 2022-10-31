@@ -21,7 +21,6 @@
   font-size: 12px;
 }
 
-
 #city {
   border: none;
   padding: 5px 2px;
@@ -76,14 +75,11 @@ ul.actual {
   font-weight: 400;
 }
 .temperature {
-  
   font-weight: bold;
-
 }
 
 .unit {
-
-   font-weight: bold;
+  font-weight: bold;
 }
 .Mon {
   font-size: medium;
