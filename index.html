@@ -43,9 +43,10 @@
               class="search bar"
               autocomplete="off"
               autofocus="on"
+              id="city-field"
             />
           </div>
-          <button type="button" class="button">Search</button>
+          <button type="button" class="button" id="city-search">Search</button>
           <h1>time</h1>
           <h2 id="city">City</h2>
         </div>
@@ -56,6 +57,7 @@
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               alt="clear sky"
+              id="icon"
             />
             <div>
               <strong id="temperature">Temperature</strong
@@ -66,7 +68,8 @@
           <ul class="actual">
             <li>Precipitation</li>
             <li> Humidity: <span id="humidity"></span>%</li>
-            <li>Wind</li>
+           <li> Wind: <span id="wind"></span>km/h</li>
+         
           </ul>
         </div>
 
