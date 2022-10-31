@@ -28,13 +28,12 @@
     <title>Weather app</title>
   </head>
   <body>
-    
-    <div class="weather-app">
+    <div class="container">
       <div class="card">
         <br />
-         <h3 class="github">
-            <a href="https://github.com/Denyna01/weather-project">github</a>
-          </h3 >
+        <h3 class="github">
+          <a href="https://github.com/Denyna01/weather-project">github</a>
+        </h3>
         <div>
           <div class="search">
             <br />
@@ -47,21 +46,29 @@
             />
           </div>
           <button type="button" class="button">Search</button>
+          <h1>time</h1>
+          <h2 id="city">City</h2>
         </div>
-       <div class="actual">
-  <ul class="actual">
-    <li>date time</li>
-    <li><img src="https://d32-a.sdn.cz/d_32/c_static_QJ_U/KaNUk/media/img/weather/day01-2x.png" /> text</li>
-    <li>clear</li>
-  </ul>
 
-  <ul class="actual">
-    <li>Precipitation</li>
-    <li>humidity</li>
-    <li>Wind</li>
-  </ul>
-</div>
+        <div class="actual">
+          <ul class="actual">
+            <li id="description"></li>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="clear sky"
+            />
+            <div>
+              <strong id="temperature">Temperature</strong
+              ><span class="units"> °C|°F</span>
+            </div>
+          </ul>
 
+          <ul class="actual">
+            <li>Precipitation</li>
+            <li> Humidity: <span id="humidity"></span>%</li>
+            <li>Wind</li>
+          </ul>
+        </div>
 
         <div class="row">
           <div class="Monday col">
@@ -100,10 +107,15 @@
               <p class="card-text">12°C</p>
             </div>
           </div>
-         
         </div>
       </div>
     </div>
+    <small>
+      <a href="https://github.com/Denyna01/weather-project" target="_blank"
+        >open-source code</a
+      >
+      by Denisa Budajova
+    </small>
   </body>
   <script src="js.js"></script>
 </html>

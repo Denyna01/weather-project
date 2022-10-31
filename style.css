@@ -1,3 +1,9 @@
+.container {
+  max-width: 7700px;
+  margin: 0 auto;
+  padding: 30px;
+  border: #8dd314;
+}
 .body {
   display: flex;
   justify-items: center;
@@ -13,6 +19,16 @@
   text-decoration: style;
   display: inline-block;
   font-size: 12px;
+}
+
+
+#city {
+  border: none;
+  padding: 5px 2px;
+  text-align: center;
+  text-decoration: style;
+  display: inline-block;
+  font-size: 40px;
 }
 
 .card {
@@ -43,15 +59,32 @@ div.actual {
 }
 
 ul.actual {
+  list-style: none;
+  text-transform: capitalize;
+  font-size: medium;
+  font-weight: 100;
+  height: auto;
   width: 50%;
-/*  background-color:tomato;*/
+  margin-bottom: 0%;
+  /*  background-color:tomato;*/
 }
 
 .actual img {
-  max-height: 2rem;
-  vertical-align: middle;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+.temperature {
+  
+  font-weight: bold;
+
 }
 
+.unit {
+
+   font-weight: bold;
+}
 .Mon {
   font-size: medium;
   text-align: left;

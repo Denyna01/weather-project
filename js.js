@@ -1,9 +1,17 @@
 function displayTemperature(response) {
   console.log(response.data);
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  cityElement.innerHTML = response.data.city;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = response.data.temperature.humidity;
 }
 
-let apiKey = "4c9b53e4f8f5eb00df5915bdca340605";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Prague&appid=${apiKey}&units=metric`;
+let apiKey = "acfd102152eb04ebf39439at08oab84c";
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Lisbon&key=acfd102152eb04ebf39439at08oab84c&units=metric`;
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
 
@@ -23,6 +31,7 @@ let months = [
   "Feb",
   "Mar",
   "May",
+  "April",
   "Jun",
   "Jul",
   "Aug",
