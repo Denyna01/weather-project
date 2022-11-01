@@ -36,7 +36,7 @@ let months = [
   "Feb",
   "Mar",
   "May",
-  "April",
+  "Apr",
   "Jun",
   "Jul",
   "Aug",
@@ -65,9 +65,9 @@ function getDataAboutCity() {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (17 * 9) / 5 + 32;
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  let fahrenheitLink = document.querySelector("#fahreheit-link");
-  fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 }
+let fahrenheitLink = document.querySelector("#fahreheit-celsius");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);

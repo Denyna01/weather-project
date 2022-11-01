@@ -76,10 +76,19 @@ ul.actual {
 }
 .temperature {
   font-weight: bold;
+  font-size: 16px;
+  top: -34px
 }
+
 
 .unit {
   font-weight: bold;
+
+}
+
+.weather-forecast {
+
+
 }
 .Mon {
   font-size: medium;
