@@ -31,22 +31,30 @@
     <div class="container">
       <div class="card">
         <br />
- <small>
-      <a href="https://github.com/Denyna01/weather-project" target="_blank"
-        >GitHub</a>
+        <small>
+          <a href="https://github.com/Denyna01/weather-project" target="_blank"
+            >GitHub</a
+          >
+        </small>
         <div>
           <div class="search-btn">
-            <br /><form id="search-form" action="">
-            <input
-              type="text"
-              placeholder="Enter any city"
-              class="search bar"
-              autocomplete="off"
-              autofocus="on"
-              id="city-field"
-            />
+            <br />
+            <form id="search-form" action="">
+              <input
+                type="text"
+                placeholder="Enter any city"
+                class="search bar"
+                autocomplete="off"
+                autofocus="on"
+                id="city-field"
+                autofocus
+              />
+
+              <button type="submit" class="button" id="city-search">
+                Search
+              </button>
+            </form>
           </div>
-          <button type="submit" class="button" id="city-search">Search</button></form>
           <h1>time</h1>
           <h2 id="city">City</h2>
         </div>
@@ -62,9 +70,8 @@
             <div>
               <strong id="temperature">Temperature</strong
               ><span class="units">
-                °C| <a href="#" id="fahreheit-celsius"> °F </a></span>
-
-
+                °C| <a href="#" id="fahreheit-celsius"> °F </a></span
+              >
             </div>
           </ul>
 
@@ -73,66 +80,80 @@
             <li>Wind: <span id="wind"></span>km/h</li>
           </ul>
         </div>
-<div class = "weather-forecast">
-   <div class = "row"> 
- 
-           <div class="Monday col">
-            <div class="Mon">Monday</div>
-             <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
-            <div class="card-body">
-              <p class="card-text">18°C 12°C</p>
-            </div>
+
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="Monday col" id="day1">
+              <div class="Mon">Monday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">18°C 12°C</p>
+              </div>
             </div>
 
-          <div class="Tuesday col">
-            <div class="Tue">Tuesday</div>
-             <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
-            <div class="card-body">
-              <p class="card-text">18°C 12°C</p>
+            <div class="Tuesday col" id="day2">
+              <div class="Tue">Tuesday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">18°C 12°C</p>
+              </div>
             </div>
-          </div>
-          <div class="Wednesday col">
-            <div class="Wed">Wednesday</div>
-           <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
-            <div class="card-body">
-              <p class="card-text">18°C 12°C</p>
+            <div class="Wednesday col" id="day3">
+              <div class="Wed">Wednesday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">18°C 12°C</p>
+              </div>
             </div>
-          </div>
 
-          <div class="Thursday col">
-            <div class="Thu">Thursday</div>
-           <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
-            <div class="card-body">
-               <p class="card-text">18°C 12°C</p>
+            <div class="Thursday col" id="day4">
+              <div class="Thu">Thursday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">18°C 12°C</p>
+              </div>
             </div>
-          </div>
-          <div class="Friday col">
-            <div class="Fri">Friday</div>
-            <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
-            <div class="card-body">
-              <p class="card-text">18°C 12°C</p>
+            <div class="Friday col" id="day5">
+              <div class="Fri">Friday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">18°C 12°C</p>
+              </div>
             </div>
-               </div>
-                 <div class="Saturday col">
-                    <div class="Sat">Saturday</div>
-           <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
-            <div class="card-body">
-               <p class="card-text">18°C 12°C</p>
+            <div class="Saturday col" id="day6">
+              <div class="Sat">Saturday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">18°C 12°C</p>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-         
-    
           </div>
         </div>
+        <small>
+          <a href="https://github.com/Denyna01/weather-project" target="_blank"
+            >open-source code</a
+          >by Denisa Budajova
+      </small>
       </div>
     </div>
-    <small>
-      <a href="https://github.com/Denyna01/weather-project" target="_blank"
-        >open-source code</a
-      >by Denisa Budajova
-    </small>
   </body>
   <script src="js.js"></script>
 </html>

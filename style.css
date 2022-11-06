@@ -196,3 +196,8 @@ ul.actual {
   border: 1px solid #8dd314;
   border-radius: 5px;
 }
+/* #day1, #day2, #day3, #day4, #day5, #day6 {
+  border-color: tomato !important;
+  border-width: 3px !important;
+  border-style: solid;
+} */
