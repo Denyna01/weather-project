@@ -77,18 +77,16 @@ ul.actual {
 .temperature {
   font-weight: bold;
   font-size: 16px;
-  top: -34px
+  top: -34px;
 }
-
 
 .unit {
   font-weight: bold;
-
 }
 
 .weather-forecast {
-
-
+  margin-top: 20px;
+  text-align: center;
 }
 .Mon {
   font-size: medium;
@@ -112,17 +110,22 @@ ul.actual {
   text-align: left;
 }
 
+.Sat {
+  font-size: medium;
+  text-align: left;
+}
+
 .Monday {
   position: static;
   text-align: left;
   color: yellow;
   border: yellow;
-  padding: 32px;
+  padding: 25px;
   background-color: blueviolet;
   border-radius: 30px;
   border: 1px;
   margin: 1px;
-  height: auto;
+  height: 190px;
   max-width: 10rem;
 }
 
@@ -130,50 +133,63 @@ ul.actual {
   position: static;
   color: yellow;
   border: yellow;
-  padding: 32px;
+  padding: 25px;
   background-color: blueviolet;
   border-radius: 30px;
   border: 1px;
   margin: 1px;
-  height: auto;
+  height: 190px;
   max-width: 10rem;
 }
 .Wednesday {
   position: static;
   color: yellow;
   border: yellow;
-  padding: 32px;
+  padding: 25px;
   background-color: blueviolet;
   border-radius: 30px;
   border: 1px;
   margin: 1px;
-  height: auto;
+  height: 190px;
   max-width: 10rem;
 }
 .Thursday {
   position: static;
   color: yellow;
   border: yellow;
-  padding: 32px;
+  padding: 25px;
   background-color: blueviolet;
   border-radius: 30px;
   border: 1px;
   margin: 1px;
-  height: auto;
+  height: 190px;
   max-width: 10rem;
 }
 
 .Friday {
   color: yellow;
   border: yellow;
-  padding: 32px;
+  padding: 25px;
   background-color: blueviolet;
   border-radius: 30px;
   border: 1px;
   margin: 1px;
-  height: auto;
+ height: 190px;
   max-width: 10rem;
 }
+
+.Saturday {
+  color: yellow;
+  border: yellow;
+  padding: 25px;
+  background-color: blueviolet;
+  border-radius: 30px;
+  border: 1px;
+  margin: 1px;
+  height: 190px;
+  max-width: 10rem;
+}
+
 .weather-app {
   margin: 30px auto;
   padding: 20;

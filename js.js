@@ -15,10 +15,14 @@ function displayTemperature(response) {
   iconElement.setAttribute("src", response.data.condition.icon_url);
 }
 
-let apiKey = "acfd102152eb04ebf39439at08oab84c";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Lisbon&key=acfd102152eb04ebf39439at08oab84c&units=metric`;
-console.log(apiUrl);
-axios.get(apiUrl).then(displayTemperature);
+
+function search(cityName) {
+  let apiKey = "acfd102152eb04ebf39439at08oab84c";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityName}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayTemperature);
+}
+
 
 let now = new Date();
 let h1 = document.querySelector("h1");
@@ -48,20 +52,21 @@ let months = [
 
 let month = months[now.getMonth()];
 
-h1.innerHTML = `${day}, Oct ${date}, ${hours}:${minutes}, ${year} `;
+h1.innerHTML = `${day}, Oct ${date}, ${hours}:${minutes}, ${year}`;
 
-let cityName = document
-  .querySelector("#city-search")
-  .addEventListener("click", getDataAboutCity);
 
-function getDataAboutCity() {
-  city = document.querySelector("#city-field").value;
-  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${encodeURI(
-    city
-  )}&key=acfd102152eb04ebf39439at08oab84c&units=metric`;
-  console.log(apiUrl);
-  axios.get(apiUrl).then(displayTemperature);
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
 }
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-field");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();

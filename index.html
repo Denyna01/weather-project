@@ -35,8 +35,8 @@
       <a href="https://github.com/Denyna01/weather-project" target="_blank"
         >GitHub</a>
         <div>
-          <div class="search">
-            <br />
+          <div class="search-btn">
+            <br /><form id="search-form" action="">
             <input
               type="text"
               placeholder="Enter any city"
@@ -46,7 +46,7 @@
               id="city-field"
             />
           </div>
-          <button type="button" class="button" id="city-search">Search</button>
+          <button type="submit" class="button" id="city-search">Search</button></form>
           <h1>time</h1>
           <h2 id="city">City</h2>
         </div>
@@ -62,54 +62,68 @@
             <div>
               <strong id="temperature">Temperature</strong
               ><span class="units">
-                °C| <a href="#" id="fahreheit-celsius"> °F </a></span
-              >
+                °C| <a href="#" id="fahreheit-celsius"> °F </a></span>
+
+
             </div>
           </ul>
 
           <ul class="actual">
-            <li>Precipitation</li>
             <li>Humidity: <span id="humidity"></span>%</li>
             <li>Wind: <span id="wind"></span>km/h</li>
           </ul>
         </div>
 <div class = "weather-forecast">
-        <div class="row">
-          <div class="col-2">
+   <div class = "row"> 
+ 
+           <div class="Monday col">
             <div class="Mon">Monday</div>
-            <i class="fa-solid fa-cloud-sun">Sun</i>
+             <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
             <div class="card-body">
-              <p class="card-text">12°C</p>
+              <p class="card-text">18°C 12°C</p>
             </div>
-          </div>
+            </div>
+
           <div class="Tuesday col">
             <div class="Tue">Tuesday</div>
-            <i class="fa-regular fa-snowflake">Snow</i>
+             <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
             <div class="card-body">
-              <p class="card-text">13°C</p>
+              <p class="card-text">18°C 12°C</p>
             </div>
           </div>
           <div class="Wednesday col">
             <div class="Wed">Wednesday</div>
-            <i class="fa-solid fa-cloud-rain">Rainy</i>
+           <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
             <div class="card-body">
-              <p class="card-text">10°C</p>
+              <p class="card-text">18°C 12°C</p>
             </div>
           </div>
 
           <div class="Thursday col">
             <div class="Thu">Thursday</div>
-            <i class="fa-regular fa-sun">Sunny</i>
+           <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
             <div class="card-body">
-              <p class="card-text">14°C</p>
+               <p class="card-text">18°C 12°C</p>
             </div>
           </div>
           <div class="Friday col">
             <div class="Fri">Friday</div>
-            <i class="fa-solid fa-wind">Cloudy</i>
+            <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
             <div class="card-body">
-              <p class="card-text">12°C</p>
+              <p class="card-text">18°C 12°C</p>
             </div>
+               </div>
+                 <div class="Saturday col">
+                    <div class="Sat">Saturday</div>
+           <img src ="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
+            <div class="card-body">
+               <p class="card-text">18°C 12°C</p>
+            </div>
+            </div>
+            </div>
+            </div>
+         
+    
           </div>
         </div>
       </div>
